@@ -427,7 +427,25 @@
       color: #9fb0c9;
       margin-top: 10px;
     }
+.catalog-photos {
+  display: grid;
+  gap: 24px;
+  margin-top: 20px;
+}
 
+.catalog-photos img {
+  width: 100%;
+  display: block;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.28);
+}
+
+.catalog-top-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
     @media (max-width: 1100px) {
       .hero-grid,
       .discount-grid,
@@ -494,7 +512,7 @@
 
 <div class="hero-actions">
   <a class="btn btn-primary" href="#discount">Оптовая система скидок</a>
-  <a class="btn btn-secondary" href="#pdf-catalog">Смотреть каталог</a>
+  <a class="btn btn-secondary" href="#catalog-photo">Смотреть каталог</a>
   <a class="btn btn-secondary" href="catalog.pdf" download>Скачать PDF каталог</a>
 </div>
 
@@ -604,15 +622,25 @@
         </div>
       </div>
     </section>
-<section id="pdf-catalog">
+<section id="catalog-photo">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>Каталог PDF</h2>
-        <p>Вы можете посмотреть каталог прямо на сайте или скачать его на устройство.</p>
+        <h2>Каталог в фотографиях</h2>
+        <p>Листайте страницы каталога прямо на сайте или скачайте PDF-файл.</p>
       </div>
-      <a class="btn btn-primary" href="catalog.pdf" download>Скачать каталог</a>
+      <div class="catalog-top-actions">
+        <a class="btn btn-primary" href="catalog.pdf" download>Скачать PDF каталог</a>
+      </div>
     </div>
+
+    <div class="catalog-photos">
+      <img src="catalog-images/page-1.jpg" alt="Каталог Fix & Build страница 1">
+      <img src="catalog-images/page-2.jpg" alt="Каталог Fix & Build страница 2">
+      <img src="catalog-images/page-3.jpg" alt="Каталог Fix & Build страница 3">
+    </div>
+  </div>
+</section>
 
     <div class="card" style="padding: 12px; overflow: hidden;">
       <iframe
